@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Registeration Form</h1>
+    <form onsubmit="return valid()" method="post">
+        <label>User Name : </label>
+        <input type="text" id="uname" placeholder="User Name" />
+        <span id="uerr"></span>
+        <label>Password : </label>
+        <input type="password" id="passw" placeholder="Password" />
+        <input type="submit">
+    </form>
+    
+    <script>
+       function valid(){
+            var uname = document.getElementById("uname").value;
+            var passw = document.getElementById("passw").value;
+
+            console.log(uname + ' ' + passw);
+
+            if(uname==""){
+                // alert("Please Enter User Name");
+                document.getElementById("uerr").innerHTML="Please Enter userName"
+            }
+            else if(uname.length<2){
+                alert("Name should be minimum 2 character long")
+            }
+            else if(passw==""){
+                alert("Enter Password");
+            }
+            else if(passw.length<8){
+                alert("Too short password");
+            }
+            else if(pass.length>16){
+                alert("Maximum length is 16");
+            }
+            else{
+                console.log("Register Successful")
+            }
+            return false;
+         }
+    </script>
+</body>
+</html>

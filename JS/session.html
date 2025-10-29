@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session</title>
+</head>
+<body>
+    <h1>Session Storage</h1>
+    <h2 id="welcomeu"></h2>
+
+    <script>
+        var data = {
+            name : "Grras",
+            age : 26,
+            location : "ahmedabad"
+        }
+        var stringData = JSON.stringify(data);
+        console.log(data);
+        console.log(stringData);
+        // it store only string data
+        sessionStorage.setItem("user",stringData);
+
+        // get item from session
+        var sessionData = sessionStorage.getItem("user");
+        console.log(JSON.parse(sessionData));
+        var jdata = JSON.parse(sessionData)
+        document.getElementById("welcomeu").innerHTML=`Welcome ${jdata.name}`;
+    </script>
+    
+</body>
+</html>

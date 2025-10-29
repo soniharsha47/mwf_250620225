@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load file Data using AJAX</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .loadDataCss{
+            font-size: 20px;
+            color: red;
+            background-color: bisque;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AJAX Load Data form another file type</h1>
+    <button>Click to load file</button>
+    <p></p>
+    
+    <script>
+        $(document).ready(()=>{
+            $('button').click(()=>{
+                $('p').load("data.txt");
+                $('p').addClass('loadDataCss');  
+            })
+        })
+    </script>
+</body>
+</html>

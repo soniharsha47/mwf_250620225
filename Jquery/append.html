@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Append</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <form name="todo" onsubmit="return addData()">
+        <label for="">Add your Routing</label>
+        <input type="text" id="routin">
+        <input type="submit">
+    </form>
+    <button>Add list</button>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+
+    </ul>
+
+    <script>
+        $(document).ready(()=>{
+            $('button').click(function(){
+                $('ul').append("<li style='color:red'> using JQuery </li>")
+            })
+        })
+
+        function addData(){
+            var data = document.forms['todo']['routin'].value;
+            $('ul').append(`<li>${data}</li>`);
+            return false;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element</title>
+</head>
+<body>
+
+    <h1>Form Element</h1>
+    <!-- 
+        name - indentity
+        onsubmit - js fun calling
+        action - backend api call
+        method - get(less secure) / post(more secure)
+    -->
+    <form>
+        <label>Label : User Name</label>
+        <input />
+        <!-- 
+            type - which type of data user can insert - email,telephone,date etc
+            name - backend fetch
+            id - js fetch
+            placeholder - watermark
+            value - default value
+            readonly - u cant update but the vvalue will store in db
+            disable - u cant update and the valuye will not be store in db
+            max - maximum data
+            min - minimum data
+            maxlength - maximum number of character/length
+            minlength - minumum number of character/length
+        -->
+        <input type="text">
+        <input type="email">
+        <input type="url">
+        <input type="password">
+        <input type="tel" maxlength="10" minlength="10">
+        <input type="number" min="1" max="15">
+        <input type="search">
+        <br><br>
+        <input type="file">
+        <input type="color">
+        <input type="range">
+        <br><br>
+        <input type="month">
+        <input type="week">
+        <input type="date" max="2002-01-15" min="1998-01-15">
+        <input type="time">
+        <input type="datetime-local">
+        <br><br>
+        <input type="radio" value="..">
+        <input type="checkbox" value="...">
+        <textarea></textarea>
+        <select>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Surat">Surat</option>
+            <option value="Junagadh">Junagadh</option>
+            <option></option>
+            <option></option>
+
+        </select>
+
+
+        <br><br>
+        <input type="submit" value="send btn">
+        <input type="reset">
+        <input type="button" value="Send">
+
+        <br><br>
+
+    </form>
+    
+</body>
+</html>

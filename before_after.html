@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After</title>
+    <style>
+        .box{
+            background-color: brown;
+        }
+        .box::before{
+            content: "Hey from before : ";
+            background-color: bisque;
+        }
+        .box::after{
+            content: " : Hey form after ";
+            color: white;
+            background-color: burlywood;
+        }
+        .box1{
+            background-color: gray;
+            margin-top: 5%;
+            height: 100px;
+            width: 100px;
+        }
+        .box1::before{
+            content: "";
+            background-color: brown;
+            height: 50px;
+            width: 50px;
+            display: block;
+            border-radius: 100%;
+            margin-left: 25%;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, sunt!</div>
+    <div class="box1"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+</head>
+<body>
+    <h1>Registeration Form</h1>
+    <form name="myform" onsubmit="return valid()" method="post">
+        <label>User Name : </label>
+        <input type="text" id="uname" placeholder="User Name" />
+        <span id="uerr"></span>
+        <label>Email : </label>
+        <input type="text" id="email" />
+        <label>Password : </label>
+        <input type="password" id="passw" placeholder="Password" />
+        <input type="submit">
+    </form>
+    
+    <script>
+       function valid(){
+            var email = document.forms['myform']['email'].value;
+            console.log(email)
+            var index = email.search('@');
+            var preindex = email.search("@")-1;
+            var postindex = email.search("@")+1;
+
+            if(index==-1 | preindex<=2 | email[postindex]==undefined){
+                console.log("Invalid Email ");
+            }
+            else{
+                console.log("Valid Email")
+            }
+            return false;
+         }
+        //  valid emails are only : gmail.com & yahoo.com
+        // URL condition
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Web page</title>
+    <style>
+        img{
+            height: 50px;
+            width: 50px;
+        }
+
+        header{
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li{padding: 2%;}
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .slider{
+            background-image:url(./Media/bg.jpg);
+            height: 400px;
+            background-size: cover;
+            position: relative;
+        }
+        .box{
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.66);
+        }
+        .slider-p{
+            position: absolute;
+            top: 20%;
+            color: white;
+            width: 80%;
+            left: 10%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="./media/bird.png" alt="">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Gallary</a></li>
+            <li><a href="">Profile</a></li>
+        </ul>
+        <div class="header-container" style="display: flex;height: 50px;">
+             <button>Signup</button>
+             <img src="./media/cart.png" alt="" />
+        </div>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="box"></div>
+            <div class="slider-p">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, error.</h3>
+                <button>click to explore</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

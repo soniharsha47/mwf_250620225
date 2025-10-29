@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Hover</title>
+    <style>
+        *{margin: 0;}
+        ul{
+            background-color: teal;
+            list-style-type: none;
+            display: flex;
+        }
+        li{padding: 1%;}
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .sub-ul{
+            display: block;opacity: 0;position: absolute;color: white;
+        }
+        .nav-li-career:hover .sub-ul{
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul class="nav-ul">
+            <li class="nav-li"><a href="">Home</a></li>
+            <li class="nav-li-career"><a href="">Career</a>
+                <ul class="sub-ul">
+                    <li class="sub-li">Developement</li>
+                    <li class="sub-li">Design</li>
+                    <li class="sub-li">DevOps</li>
+                </ul>
+            </li>
+            <li class="nav-li"><a href="">About us</a></li>
+            <li class="nav-li"><a href="">Galary</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatum quas dolore laboriosam sed quasi dicta repudiandae a expedita, tenetur maiores aperiam quam, harum molestiae aliquam impedit nemo est. Voluptas rem ratione cum earum, atque eos quo incidunt facilis eius est dolorem quod voluptatibus dolor ducimus dicta explicabo laborum expedita praesentium maxime ipsa illum distinctio, itaque ullam voluptatem. Reprehenderit, in, alias sed iure dolorem tempore porro excepturi nemo quibusdam modi atque quasi hic, eveniet veniam! Iusto repudiandae fugit labore repellendus natus quia sunt necessitatibus est nulla cumque voluptate provident illo, dolorem maxime obcaecati ad impedit, minus numquam harum quo error, velit quisquam ipsum. Quod recusandae numquam a, ab id incidunt voluptas est, tenetur voluptatem praesentium, perferendis doloremque! Autem minima, incidunt exercitationem illum nulla ducimus adipisci tempora blanditiis distinctio eius voluptatibus esse veritatis magni architecto corrupti, magnam dolores deleniti perferendis id repudiandae? Eum quis, quibusdam fugiat quos facere, magnam distinctio nulla unde quod, hic nihil atque excepturi similique fugit magni corrupti labore consequatur explicabo rerum dolorum voluptas sapiente illum libero! Corrupti iure iste accusamus neque enim repellendus quidem explicabo minus! Voluptatem dolore minus quod incidunt enim corrupti placeat qui? Reprehenderit deserunt neque, qui dicta in quasi dignissimos sapiente dolorem optio asperiores?</p>
+    </main>
+</body>
+</html>

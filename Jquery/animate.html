@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery animate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        p{
+            background-color: gray;
+            height: 300px;
+            width: 300px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1> jquery</h1>
+    <button>click to change bg color</button>
+    <p></p>    
+
+    <script>
+        $(document).ready(()=>{
+            // action & action Element
+            $('button').click(()=>{
+               $('p').animate({left:"200px",top:"300px"},5000)
+            })
+        })
+    </script>
+</body>
+</html>

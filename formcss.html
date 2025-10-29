@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form CSS</title>
+    <style>
+        body{
+            background-color: gainsboro;
+        }
+        .container{
+            width: 700px;
+            height: 500px;
+            position: relative;
+            left: 300px;
+            top: 50px;
+            box-shadow: 1px 1px 20px gray;
+            border-radius: 50px;
+            display: flex;
+            /* flex-wrap: wr; */
+        }
+        .leftpart{
+            background-color: #fed501;
+            width: 300px;
+            height: 100%;
+            border-radius: 50px 0px 0px 50px;
+            text-align: center;
+        }
+        .rightpart{
+            background-color: brown;
+            width: 400px;
+            border-radius: 0px 50px 50px 0px;
+        }
+        .form-container{
+            display: flex;
+            margin: 10%;
+            justify-content: center;
+        }
+        .forlabel{
+            width: 100px;
+        }
+        input{
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid white;
+        }
+        input:focus{
+            outline: none;
+            border-bottom: 1px solid black;
+        }
+
+        input[type="text"]{
+            background-image: url(./Media/user.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: right;
+        }
+
+        input[type='submit']{
+            background-color: green;
+            padding: 2%;
+            color: white;
+            outline: none;border: none;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="leftpart">
+                Lorem ipsum dolor sit amet.
+            </div>
+            <div class="rightpart">
+                <form action="">
+                    <div class="form-container">
+                        <div class="forlabel">
+                            <label>Name</label>
+                        </div>
+                        <div class="forinput">
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <div class="forlabel">
+                            <label>Email</label>
+                        </div>
+                        <div class="forinput">
+                            <input type="email">
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

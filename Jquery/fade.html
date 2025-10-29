@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Fade</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        p{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hide and Show using jquery</h1>
+    <button>click to hide</button>
+    <button class="show">Click to show</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat atque ea ducimus pariatur dolores. Similique ut, laudantium impedit iure amet atque dolorem deserunt mollitia perspiciatis cum nam nesciunt incidunt voluptatibus quisquam. Rem, natus assumenda? Sint harum deserunt minima quis maxime laboriosam fugit. Vero molestias sed accusamus, nihil eius beatae optio molestiae, saepe incidunt possimus nobis sint iure quo itaque! Corporis officiis laboriosam quidem excepturi temporibus in porro reprehenderit, qui dolore quisquam sint cum unde illum distinctio quibusdam eum obcaecati! Beatae ipsum explicabo distinctio dolore quasi adipisci laudantium, magnam ipsa labore perspiciatis quos dolorum ea quia necessitatibus commodi id blanditiis vel.</p>
+    
+
+    <script>
+        $(document).ready(()=>{
+            // action & action Element
+
+            $('p').hide()
+
+            $('button').click(()=>{
+                // reflecteadElement & reflaction
+                $('p').fadeOut(2000)
+            })
+
+            $('.show').click(()=>{
+                $('p').fadeIn(3000)
+            })
+        })
+    </script>
+</body>
+</html>

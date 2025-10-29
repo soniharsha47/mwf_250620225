@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask image</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 500px;
+
+            mask-image: url(./media/mask.png);
+            mask-size: 200px;
+            mask-repeat: no-repeat;
+            mask-position: 200px 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <img src="./Media/bg.jpg" height="100%" width="100%" alt="">
+    </div>
+</body>
+</html>

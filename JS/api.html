@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+<body>
+    <h1>Fetch API </h1>
+    <table border="2">
+        <tr>
+            <th>ID</th>
+            <th>advice</th>
+        </tr>
+        <tr>
+            <td id="id"></td>
+            <td id="advice"></td>
+        </tr>
+    </table>
+
+    <script>
+        async function fApi() {
+            var api = await fetch("https://api.adviceslip.com/advice");
+            var data = await api.json()
+            console.log(data);
+
+            document.getElementById('id').innerHTML=data.slip.id;
+            document.getElementById('advice').innerHTML=data.slip.advice;
+
+
+        }
+        fApi();
+    </script>
+    
+</body>
+</html>
